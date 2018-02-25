@@ -1,4 +1,3 @@
-import time
 def BuscaSequencial(v, x):
         i = 0
         while i < len(v):
@@ -7,11 +6,5 @@ def BuscaSequencial(v, x):
                 i += 1
         return -1
 
-antes = time.time()
-vetor = (range(1000000))
-#print(vetor)
+vetor = (range(100))
 print BuscaSequencial(vetor, 9999)
-depois = time.time()
-total = (depois-antes)*1000
-
-print("Tempo de execucao: %0.2f ms" % total)
